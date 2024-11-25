@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocker</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stocker</h1>
+    <div id="auth-section">
+      <h2>Login / Register</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="trade-section" style="display: none;">
+      <h2>Welcome, <span id="user-name"></span>!</h2>
+      <input type="text" id="stock-symbol" placeholder="Stock Symbol">
+      <input type="number" id="quantity" placeholder="Quantity">
+      <select id="transaction-type">
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+      </select>
+      <input type="number" id="price" placeholder="Price">
+      <button onclick="trade()">Submit Trade</button>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
